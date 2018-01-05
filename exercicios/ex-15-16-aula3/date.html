@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicios Aula 3</title>
+</head>
+<body>
+<!--Exercicio 15 da aula 3-->
+</body>
+<script !src="">
+    /*ex 15*/
+    let dataString = '17-05-2016';
+
+    dataString = dataString.split('-').reverse().join('/');
+
+    let data = new Date(dataString);
+
+    console.log(dataString);
+    console.log(data);
+
+    /*ex 16*/
+    let lista1 = ['banana', 'laranja', 'mamão'];
+    let lista2 = ['caju', 'tangerina', 'abacaxi'];
+/*se eu fizer com spread operator, eu adiciono os itens do array 2 ao array 1
+ * se eu fizer sem o spread opeator, eu adiciono o array 2 inteiro, como ultimo
+ * item do array 1*/
+    lista1.push(...lista2);
+
+    console.log(lista1);
+
+</script>
+
+</html>

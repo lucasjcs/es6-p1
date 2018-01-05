@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 17</title>
+</head>
+<body>
+</body>
+<script !src="">
+    let numeros = [3,2,11,20,8,7];
+    let newNumeros = [];
+    /*solução simples
+
+    numeros.forEach(function (item) {
+        if(item % 2 != 0){
+            item = item * 2;
+        }
+        newNumeros.push(item);
+    })
+    console.log(numeros);
+    console.log(newNumeros);
+
+    */
+
+    /*solução com programação funcional*/
+    newNumeros = numeros.map(item => item % 2 ? item *2  : item);
+    console.log(newNumeros);
+
+
+</script>
+</html>
